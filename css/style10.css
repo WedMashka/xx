@@ -1,0 +1,161 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+
+body{
+   padding: 30px;
+   background-color: rgb(196, 195, 195);
+}
+div, p,ul,input,button{
+margin: 30px;
+}
+a{
+   text-transform: uppercase;
+}
+.block {
+   padding: 40px;
+   border-radius: 30px 30px;
+   box-shadow: 0px 0px 30px 0px white;
+}
+.block p:last-child{
+   text-transform: uppercase;
+}
+.block:hover{
+   box-shadow: inset 0px 0px 30px 0px white;
+}
+.link{
+   color: rgb(6, 0, 128);
+}
+.link:hover{
+   text-shadow:0px 0px 10px rgb(171, 171, 255);
+}
+.link:active {
+   text-shadow: 0px 0px 10px rgb(252, 59, 1);
+}
+.link:visited {
+   text-shadow: 0px 0px 10px rgb(3, 3, 221);
+}
+.text {
+   line-height: 30px;
+   font-size: 30px;
+   font-weight: 500;
+   font-style: oblique;
+   text-shadow: 0px 0px 30px rgb(255, 255, 255);
+}
+
+.text_input {
+   text-align: center;
+   color: white;
+   width: 300px;
+   height: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 25px;
+   background-color:rgb(41, 39, 39);
+   box-shadow: 0px 0px 10px 3px white, inset 0px 0px 10px 3px white;
+}
+.text_input:hover{
+   box-shadow: 0px 0px 10px 3px rgb(130, 105, 250), inset 0px 0px 10px 3px rgb(133, 104, 250);
+}
+.text_input:active{
+   box-shadow: 0px 0px 10px 3px rgb(245, 3, 3), inset 0px 0px 10px 3px rgb(251, 7, 3);
+}
+.text_input:visited{
+   box-shadow: 0px 0px 10px 3px rgb(28, 0, 166), inset 0px 0px 10px 3px rgb(34, 1, 168);
+}
+.text_input:focus {
+   box-shadow: 0px 0px 10px 3px rgb(29, 250, 4), inset 0px 0px 10px 3px rgb(2, 255, 2);
+}
+
+.button_text {
+   color: white;
+   width: 150px;
+   height: 50px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   font-size: 25px;
+   background-color:rgb(41, 39, 39);
+   box-shadow: 0px 0px 10px 3px white, inset 0px 0px 10px 3px white;
+}
+.button_text:hover{
+   box-shadow: 0px 0px 10px 3px rgb(130, 105, 250), inset 0px 0px 10px 3px rgb(133, 104, 250);
+}
+.button_text:active {
+   box-shadow: 0px 0px 10px 3px rgb(245, 3, 3), inset 0px 0px 10px 3px rgb(251, 7, 3);
+}
+.button_text:visited {
+   box-shadow: 0px 0px 10px 3px rgb(28, 0, 166), inset 0px 0px 10px 3px rgb(34, 1, 168);
+}
+.button_text:focus {
+   box-shadow: 0px 0px 10px 3px rgb(29, 250, 4), inset 0px 0px 10px 3px rgb(2, 255, 2);
+}
+.list {
+    font-family: Arial, Helvetica, sans-serif;
+   font-style: italic;
+   font-weight: 500;
+   text-transform: uppercase;
+   font-size: 25px;
+}
+
+.list_text {
+   background-size: auto;
+   background-image: url(../img/icons/li.svg);
+   background-repeat: no-repeat;
+   background-position: 0 47%;
+   padding: 20px;
+}
+.list_text:first-child{
+text-shadow: 0px 0px 15px rgb(255, 4, 4);
+}
+.list_text:last-child {
+   text-shadow: 0px 0px 15px rgb(255, 4, 205);
+}
+.list_text:nth-child(2) {
+   text-shadow: 0px 0px 15px rgb(30, 255, 109);
+}
+.list_text:nth-child(odd) {
+   text-transform: lowercase;
+}
+.list_text:nth-child(even) {
+  font-weight: 700;
+}

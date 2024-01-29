@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="../css/style4.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>all lessons</title>
+</head>
+<body>
+<form action="#" method="post" enctype="multipart/form-data">
+   <!--form for any data. To be sure to write enctype="multipart/form-data"-->
+   <!--<form action="#" method="get"></form>-->
+   <!--form for only text and numbers-->
+   <div>
+      <input type="text" name="username" value="user" />
+   </div>
+   <div>
+      <input type="text" name="username" value="" placeholder="user" />
+   </div>
+   <div>
+      <input type="tel" name="username" value="tel-number" />
+   </div>
+   <div>
+      <input type="tel" name="username" value="" placeholder="tel-number" />
+   </div>
+   <p>
+      *type=tel (form for enter numbers) <br />
+      *type=text (form for enter text and numbers) <br />
+      *value=user (the default text ) <br>
+   </p>
+   <div>
+      <input type="password" name="userpass" />
+   </div>
+   <div>
+      <input disabled type="radio" name="beer" value="lager" /> lager
+   </div>
+   <div>
+      <input checked type="radio" name="beer" value="pilsner" /> pilsner
+   </div>
+   <p>Additionally</p>
+   <p>
+      <input type="checkbox" name="additionally1" id="" value="cash"> cash
+   </p>
+   <p>
+      <input disabled type="checkbox" name="additionally2" id="" value="cashless"> cashless
+   </p>
+   <p>
+      <input type="checkbox" name="additionally3" id="" value="delivery"> devivery
+   </p>
+   <p>
+      <input type="checkbox" name="additionally4" id="" value="coupon"> coupon
+   </p>
+   <p> must have different attributes name </p>
+   <br>
+   <input type="file" name="foto" id="">
+   <br>
+   <p>
+      <textarea name="text" id="" placeholder="Cols and rols it is height and width "></textarea>
+      Cols and rols it is height and width ( *textarea name="text" id="" cols="20" rows="20"* */textarea*)
+   </p>
+   <div>
+      <select name="cauntri" id="">
+         <option value="ger">germany</option>
+         <option value="rus">russia</option>
+         <option value="belg">belgium</option>
+         <option selected value="czeh">czech</option>
+         <option value="brit">britain</option>
+         <option value="ital">italy</option>
+         <option disabled value="franc">france</option>
+         <option value="austr">austria</option>
+      </select>
+   </div>
+   <p></p>
+   <p>multiple select</p>
+   <p></p>
+   <div>
+      <select multiple name="cauntri" id="">
+         <option value="ger">germany</option>
+         <option selected value="rus">russia</option>
+         <option value="belg">belgium</option>
+         <option value="czeh">czech</option>
+         <option disabled value="brit">britain</option>
+         <option value="ital">italy</option>
+         <option value="franc">france</option>
+         <option value="austr">austria</option>
+      </select>
+   </div>
+   <div>
+      <button type="submit">Sent</button>
+   </div>
+   <div>
+      <button type="reset">reset</button>
+   </div>
+</form>
+<div>
+   <form action="№" method="post">
+      <p> Name</p>
+      <input placeholder="Name" type="text" name="" class="l4-input_name" />
+      <p>Password</p>
+      <input type="password" name="" class="l4-input_passord" />
+      <p>Tel</p>
+      <input placeholder="tel" type="tel" name="" id="" />
+      <p>Gender</p>
+      <p><input type="radio" name="gender" id="" />Man</p>
+      <p><input type="radio" name="gender" id="" />woman</p>
+      <p>Property</p>
+      <p><input checked type="checkbox" name="bike" id="" />bike</p>
+      <p><input type="checkbox" name="" id="car" />car</p>
+      <p><input disabled type="checkbox" name="flat" id="" />flat</p>
+      <p> More information</p>
+      <p><textarea placeholder="more information" name="" id="" cols="" rows="" /></textarea></p>
+      <p>Attach a photo</p>
+      <p><input type="file" name="" id="" value="select file"></p>
+      <p>Favorit color</p>
+      <select name="" id="">
+         <option value="color1">red</option>
+         <option selected value="color2">blue</option>
+         <option value="color3">yelow</option>
+         <option disabled value="color4">green</option>
+         <option value="color5">purple</option>
+      </select>
+      <br>
+      <button type="submit">sent</button>
+      <button type="reset">clearn</button>
+   </form>
+</body>
+</html>

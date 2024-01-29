@@ -1,0 +1,185 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+body{
+   font-size: 40px;
+}
+.examle_block {
+   border: 5px solid black;
+   margin: 30px;
+}
+.examle-string {}
+
+.examle-img {
+   border: 5px dotted black;
+   margin: 30px;
+}
+
+.examle_block2 {
+   border: 5px dashed black;
+   margin: 30px;
+}
+
+.examle-string2 {}
+
+.examle-img2 {
+   border: 10px solid black;
+   border-left: 0;
+   margin: 30px;
+}
+
+.examle_block3 {
+   border-top: 5px solid;
+   margin: 30px;
+}
+
+.examle-string3 {}
+
+.examle-img3 {
+   border: 30px double black;
+   margin: 30px;
+}
+div{
+   margin: 50px;
+}
+.di51 {
+   border: 30px rgb(173, 76, 76);
+   border-style: solid;
+   width: 500px;
+   height: 300px;
+}
+
+.di52 {
+   border-radius: 50px 50px 0px 0px;
+   overflow:scroll;
+   border: 10px black;
+   border-style: double;
+   width: 500px;
+   height: 300px;
+}
+
+.di53 {
+   border-radius: 50%;
+   overflow:hidden;
+   border: 30px rgb(34, 21, 219);
+   border-style:groove;
+   width: 500px;
+   height: 500px;
+   
+}
+
+.di54 {
+   border-radius: 30px 0px 30px 0px;
+   overflow: visible;
+   border: 30px rgb(159, 25, 212);
+   border-style:ridge;
+   width: 500px;
+   height: 300px;
+}
+
+.di55 {
+   overflow: hidden;
+   border: 30px rgb(16, 33, 222);
+   border-style:outset;
+   width: 500px;
+   height: 300px;
+
+}
+
+.di56 {
+   border-radius: 50%;
+   overflow: hidden;
+   border: 30px rgb(55, 5, 235);
+   border-style: solid;
+   width: 500px;
+   height: 500px;
+}
+
+.di57 {
+   border-radius: 50%;
+   box-shadow: 0px 0px 50px 10px green;
+   overflow: hidden;
+   width: 500px;
+   height: 300px;
+   border: 10px black;
+}
+
+.di58 {
+   border-radius: 50%;
+   box-shadow: inset 0px 0px 50px 10px green;
+   overflow: hidden;
+   width: 500px;
+   height: 300px;
+   border: 10px black;
+}
+
+.di59 {
+   border-radius: 50%;
+   box-shadow: 0px 0px 50px 10px green, inset 0px 0px 50px 10px green;
+   overflow: hidden;
+   width: 500px;
+   height: 300px;
+   border: 10px black;
+}
+
+.di60 {
+   opacity: 0.3;
+   overflow: hidden;
+   width: 500px;
+   height: 300px;
+   border: 10px black;
+   border-style: dotted;
+   border-radius: 30px;
+   margin: 0px 0px 80px 8px;
+}
+.out1{
+   width: 500px;
+   height: 500px;
+   outline: 50px solid green;
+   border-radius: 50px;
+   box-shadow: 0px 0px 30px 10px green, inset0px 0px 30px 10px green;
+   font-size: 40px;
+   text-transform: uppercase;
+   font-style: italic;
+   color: rgb(237, 84, 18);
+   padding: 40px;
+   line-height: 50px;
+}

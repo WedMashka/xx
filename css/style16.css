@@ -1,0 +1,291 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+body{
+   font-family:Arial, Helvetica, sans-serif;
+}
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+.hi {
+      padding: 50px 0px 50px;
+}
+.hi, .footer{
+   background-color: #5e5373;
+}
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+}
+.content {
+   flex: 1 1 auto;
+}
+.hi-row {
+   display: flex;
+   justify-content:space-between;
+}
+
+.hi-body {
+   padding: 0px 30px 0px 0px;
+   color: white;
+}
+
+.hi-title {
+   font-size: 60px;
+   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+   padding: 0px 0px 35px;
+}
+
+.hi-list {}
+.hi-list li{
+   font-size: 20px;
+   line-height: px;
+   padding: 0px 0px 15px 30px;
+   background-size: auto;
+   background-image: url(../img/img/icons/icon.png);
+   background-repeat: no-repeat;
+   background-position: 0% 0%;
+}
+.hi-list li:last-child{
+   padding: 0px 0px 0px 36px;
+   margin: 0px;
+}
+.hi-img {}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+.fotter-row {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 70px;
+}
+
+.fotter-text {
+   color: white;
+   font-size: 12px;
+   letter-spacing: 3px;
+}
+.what {
+   padding: 50px 0px 50px;
+}
+
+.what-row {
+   display: flex;
+   justify-content: space-between;
+}
+
+.what-img {
+   padding: 0px 0px 0px 5px;
+   flex: 0 0 430px;
+}
+.what-img img{
+   max-width: 100%;
+}
+
+.what-body{
+   padding: 0px 5px 0px 30px;
+   flex: 1 1 auto;
+}
+
+.what-title {
+}
+
+.title {
+   font-size: 30px;
+   color: rgb(72, 63, 114);
+   padding: 0px 0px 30px 0px;
+}
+
+.what-text {
+   color: rgb(29, 29, 29);
+   text-align: justify;
+   font-size: 16px;
+   line-height: 20px;
+   font-weight: 100;
+}
+.what-text p{
+   padding: 0 0 3%;
+}
+.what-text p:last-child {
+   padding: 0 0 0%;
+}
+.coumns {
+   background-color: rgb(235, 238, 238);
+   padding: 50px 0px 20px;
+}
+
+.columns-title {
+   text-align: center;
+   margin: 0px 0px 30px 0px;
+}
+
+.colums-row {
+   display: flex;
+   flex-wrap: wrap;
+   margin: 0px -8px;
+}
+
+.columns-column {
+   padding: 0px 8px;
+   flex: 0 1 50%;
+   margin: 0px 0px 30px 0px
+}
+
+.columns-item {}
+
+.item {}
+
+.item-row {
+   display: flex;
+}
+
+.item-img {
+   flex: 0 0 200px;
+}
+
+.item-body {
+   flex:1 1 auto;
+   padding: 0px 0px 0px 15px;
+}
+
+.item-title {
+   font-size: 24px;
+   color: rgb(29, 29, 29);
+   line-height: 30px;
+   margin: 0px 0px 13px 0px;
+}
+
+.item-text {
+   font-size: 16px;
+   line-height: 24px;
+   color: rgb(29, 29, 29);
+   text-align: justify;
+}
+.vertical {
+   padding: 50px 0px;
+   margin: 0px 0px 60px 0px
+}
+
+.container {}
+
+.vertical-title {
+   margin: 0px 0px 30px 0px;
+   text-align: center;
+}
+
+.title {
+}
+
+.vertical-body {
+   width: 990px;
+   margin: 0px auto;
+}
+
+.vertical-row {
+   display: flex;
+   margin: 0px 22.5px;
+}
+
+.vertical-column {
+   padding: 0px 22.5px;
+   flex: 0 1 33.33333%;
+   display: flex;
+}
+
+.vertical-item {
+   background-color: #5e5373;
+   color: white;
+   border-radius: 5px;
+   border: 1px solid #5e5373;
+   display: flex;
+   flex-direction: column;
+   /*justify-content: space-between;*/
+}
+
+.vertical-subtitle {
+   font-size: 24px;
+   line-height: 30px;
+   text-transform: uppercase;
+   text-align: center;
+   padding: 12px 0px;
+}
+
+.vertical-lable {
+   background-color: white;
+   color: #5e5373;
+   text-align: center;
+   text-transform: lowercase;
+   padding: 15px 0px;
+   font-size: 35px;
+}
+
+.vertical-text {
+   padding: 20px;
+   color: aliceblue;
+   font-size: 14px;
+   line-height: 24px;
+   flex: 1 1 auto;
+}
+.vertical-text p{
+   margin: 0px 0px 15px;
+}
+.vertical-text p:last-child{
+margin: 0px 0px 0px 0px;
+}
+
+.vertical-btn {
+   display: block;
+   height: 40px;
+   background-color: aliceblue;
+   margin: 0px 20px 20px 20px;
+   border-radius: 3px;
+   text-align: center;
+   color: #5e5373;
+   padding: 15px 0px;
+   font-size: 15px;
+}

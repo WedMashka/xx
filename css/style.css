@@ -1,0 +1,130 @@
+/*--обнуление---------*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+/* убираем отступы и границы*/
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* убираем меняет подсчет ширины блока*/
+:focus,
+:active {
+   outline: none
+}
+
+a:focus,
+a:active {
+   outline: none
+}
+
+/* убираем линии обводки у некоторых браузеров*/
+nav,
+footer,
+header,
+aside {
+   display: block
+}
+
+/* Делает заначение тегов блочными*/
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*конец обнуления-------------------------*/
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 30px;
+   background-color: darkgrey;
+}
+
+.L1 {
+   font-style: italic;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   text-align: center;
+   padding: 25% 10% 0px 0px;
+   font-size: 50px;
+   color: rgb(2, 139, 0);
+}
+
+.d1 {
+   border-radius: 50%;
+   width: 100px;
+   height: 100px;
+   display: inline-block;
+   margin: 30px;
+   box-shadow: 0px 0px 40px 5px rgb(0, 255, 42);
+}
+
+.d1:hover {
+   box-shadow: inset 0px 0px 20px 2px rgb(0, 255, 42);
+}
+
+.d1:active {
+   box-shadow: 0px 0px 20px 2px rgb(195, 253, 204);
+}

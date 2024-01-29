@@ -1,0 +1,185 @@
+/*--обнуление---------*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+/* убираем отступы и границы*/
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* убираем меняет подсчет ширины блока*/
+:focus,
+:active {
+   outline: none;
+}
+
+a:focus,
+a:active {
+   outline: none;
+}
+
+/* убираем линии обводки у некоторых браузеров*/
+nav,
+footer,
+header,
+aside {
+   display: block
+}
+
+/* Делает заначение тегов блочными*/
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*конец обнуления-------------------------*/
+p{
+   margin: 20px;
+   font-size: 20px;
+}
+.arial {
+   margin: 30px 40px;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.font-size_30{
+   margin: 20px 30px;
+   font-size: 30px;
+}
+.italic{
+   font-style: italic;
+}
+.font700{
+   font-weight: 700;
+}
+.color_red{
+   font-weight: 600;
+   color: red;
+}
+.textright{
+   text-align: right;
+   font-weight: 500;
+}
+.textcenter {
+   text-align: center;
+   font-weight: 300;
+}
+
+.textjustify {
+   text-align: justify;
+   font-weight: 200;
+}
+
+.textleft {
+   font-style:oblique;
+   text-align:left;
+   font-weight: 100;
+}
+.decoration1 {
+   text-decoration:underline;
+}
+
+.decoration2 {
+   text-decoration:overline;
+}
+
+.decoration3 {
+   text-decoration:line-through;
+}
+
+.decoration4 {
+   font-size: 30px;
+   text-decoration: line-through overline underline;
+}
+.shadow{
+   text-shadow: 1px 1px 10px rgb(250, 2, 2);
+}
+.text-transsform {
+   text-transform: capitalize;
+}
+
+.text-transsform1 {
+   text-transform: lowercase;
+}
+
+.text-transsform3 {
+   text-transform: uppercase;
+}
+.text_ident{
+   text-indent: 60px;
+}
+.lspace{
+   letter-spacing: 5px;
+}
+.wspace{
+   word-spacing: 10px;
+}
+.white_space{
+   white-space: nowrap;
+   /*white-space: normal;*/
+}
+.lineheight{
+   line-height: 50px;
+}

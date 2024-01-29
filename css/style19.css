@@ -1,0 +1,115 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+.wrapper {}
+
+.header {}
+/*фиксированная верска  - ширину сделали 1170пкс расположение по центру, в таком случае наш контент на устройствах с малым экраном будет отображаться не послностью - часть будет уходить за грани экрана, но  если в head hmtl докумета добавить   <meta name="viewport" content="width=1170"> и + к боди указать min-width: 1170px то тогда наш контент будет масштабироваться */
+/*.container {
+   width: 1170px;
+   margin: 0 auto;
+}*/
+/*отзывчивая верстка - ширина указывается в процентах
+.container {
+   max-width: 1170px;
+   margin: 0 auto;
+} 
++ в коде убираем всё где есть фиксированное значение ширины. тогда при сжатии экрана размеры будут гибкими и блоки будут пропорцианально сжиматься и расширяться*/
+/*-------------*/
+/*адаптивная верстка отличается от отзывчивой, тем что нет масштабирования - изменения проиходят ступечато, в зависомости в ккой границе брейк поиинта(точки изменения) находится ширина экрана устройства, в каждом брейпоинте свои ширины и правила расположения блоков*/
+.container {
+background: rgb(180, 176, 176);
+}
+
+/*книжный экран*/
+/*@media (orientation:portrait) {
+   .container {
+         max-width: 1170px;
+         margin: 0 auto;
+      }
+}*/
+/*альбомный экран*/
+/*@media (orientation:landscape) {
+   .container {
+         max-width: 1170px;
+         margin: 0 auto;
+      }
+}*/
+ .container {
+    max-width: 200px;
+    margin: 0 auto;
+ }
+
+@media (min-width:700px) {
+   .container {
+      max-width: 400px;
+      margin: 0 auto;
+   }
+}
+
+@media (min-width:900px) {
+   .container {
+      max-width: 700px;
+      margin: 0 auto;
+   }
+}
+@media (min-width:1190px) {
+   .container {
+      max-width: 900px;
+      margin: 0 auto;
+   }
+}
+
+.header-row {}
+
+.header-logo {}
+
+.header-menu {}
+
+.menu-icon {}
+
+.icon-menu {}
+
+.menu-body {}
+
+.menu-list {}
+
+.menu-link {}

@@ -1,0 +1,267 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+body{
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper{
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+.block {
+}
+
+.block-row {
+   display: flex;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-column {
+   border: 20px solid purple;
+}
+.block-item{
+   background-color: aqua;
+   padding: 15px;
+   font-size: 40px;
+   color: rgb(115, 69, 9);
+   font-weight: 700;
+}
+/*------------1---------*/
+.wrapper1 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block1 {
+   text-align: center;
+}
+
+.block-row1 {
+   display: inline-flex;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-column1 {
+   border: 20px solid purple;
+}
+
+/*----------------------2---------*/
+.wrapper2 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block2 {}
+
+.block-row2 {
+   display: flex;
+   justify-content:center;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-column2 {
+   border: 20px solid purple;
+}
+/*---------------3--------------*/
+.wrapper3 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block3 {}
+
+.block-row3 {
+   display: flex;
+   justify-content:space-between;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-column3 {
+   border: 20px solid purple;
+}
+
+/*-------------4----------------*/
+.wrapper4 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block4 {}
+
+.block-row4 {
+   display: flex;
+   justify-content: space-around;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-column4 {
+   border: 20px solid purple;
+}
+
+/*---------------- 5-------------*/
+.wrapper5 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block5 {}
+
+.block-row5 {
+   display: flex;
+   align-items:stretch;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+
+}
+.block-item5 {
+   height: 100px;
+}
+/*---------------- 6-------------*/
+.wrapper6 {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+.block6 {}
+
+.block-row6 {
+   display: flex;
+   align-items:flex-start;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+/*--------------7---------------*/
+.block-row7 {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-start;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+/*--------------8---------------*/
+.block-row8 {
+   display: flex;
+   flex-wrap: wrap-reverse;
+   align-items: flex-start;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+/*-----------------------------*/
+.list {
+   display: flex;
+   align-items: center;
+}
+.list li{
+   margin: 0px 15px 0px 0px;
+}
+.list li:last-child {
+   margin: 0px 0px 0px 0px;
+}.block-info{
+   position: relative;
+   padding:0px 0px 0px 25px;
+   line-height: 15px;
+}
+.block-info:before{
+   content:'';
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   display: inline-block;
+  margin: 0px 20px 0px 0px;  
+}
+.option{
+   position:;
+   font-size: 60px;
+   color: red;
+   text-shadow: 0px 0px 15px rgb(1, 0, 0);
+   margin: 15% 10% 8%;
+}
+.block-info-1:before{background-color: yellow;}
+.block-info-2:before{background-color: purple;}
+.block-info-3:before{background-color: aqua;}
+.list li{
+   display: inline-block;
+   font-size: 27px;
+   font-style: italic;
+   padding: 20px 0px 30px 80px;
+}
+.block-container {}
+.block-content1 {}
+
+.block-content2 {}
+
+.block-content3 {}
+
+.block-content4 {}
+
+.block-content5 {}
+
+.list-li1 {}
+
+.list-li2 {}
+
+.list-li3 {}
+
+.list-li4 {}
+
+.list-li5 {}

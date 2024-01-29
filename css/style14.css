@@ -1,0 +1,152 @@
+/*--обнуление---------*/
+*{
+   padding: 0;
+   margin: 0;
+   border: 0;
+} /* убираем отступы и границы*/
+*,*:before,*:after{
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+} /* убираем меняет подсчет ширины блока*/
+:focus,:active{outline:none}
+a:focus,a:active{outline:none}
+/* убираем линии обводки у некоторых браузеров*/
+nav,footer,header,aside{display: block} 
+/* Делает заначение тегов блочными*/
+html,body{
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,button,textarea{
+   font-family: inherit;
+}
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0; border: 0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+/*убирают некоторые особенности в разных браузерах*/
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+/*конец обнуления-------------------------*/
+body {
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper {
+   height: 100%;
+   overflow: hidden;
+   min-height: 100%;
+   padding: 50px;
+}
+
+.block {}
+
+.block-row {
+   display: flex;
+   align-items: center;
+   margin: 0px 0px 20px 0px;
+   border: 20px solid yellow;
+}
+
+.block-item {
+   background-color: aqua;
+   padding: 15px;
+   font-size: 40px;
+   color: rgb(115, 69, 9);
+   font-weight: 700;
+}
+.list {
+   display: flex;
+   align-items: center;
+}
+
+.list li {
+   display: inline-block;
+   font-size: 27px;
+   font-style: italic;
+   padding: 20px 0px 30px 80px;
+   margin: 0px 15px 0px 0px;
+}
+
+.list li:last-child {
+   margin: 0px 0px 0px 0px;
+}
+
+.block-info {
+   position: relative;
+   padding: 0px 0px 0px 25px;
+   line-height: 15px;
+}
+
+.block-info:before {
+   content: '';
+   width: 15px;
+   height: 15px;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 0px 20px 0px 0px;
+}
+.block-info-1:before {
+   background-color: yellow;
+}
+
+.block-info-2:before {
+   background-color: purple;
+}
+
+.block-info-3:before {
+   background-color: aqua;
+}
+.option {
+   border-radius: 30px; 
+   box-shadow: 0px 0px 20px 0px red;
+   font-size: 60px;
+   color: red;
+   text-shadow: 0px 0px 15px rgb(1, 0, 0);
+   margin: 15% 10% 8%;
+}
+.option p{
+   padding: 20px;
+   text-align: center;
+}
+.block-column {
+   border: 20px solid purple;
+   flex-basis: 200px;/*задает размер элемента*/
+   flex-grow: 1;/* значения могут быть либо "1" либо "0" где один указывает на то что размер флекс элемента указанный в flex-basis может увеличиваться на всю ширинц контейнера, о ноль говорит о том что значенее указанное в flex-basis является основным дла занчания флекс элемента*/
+   flex-shrink: 0;/*задает размер элемента*/
+    /* значения могут быть либо "1" либо "0" где один указывает на то что размер флекс элемента указанный в flex-basis может уменьшаться на всю ширинц контейнера, о ноль говорит о том что значенее указанное в flex-basis является основным дла занчания флекс элемента*/
+    /*flex: 1 0 200px */
+}
+
+.block-column-1 {
+   order: 4;/* ордер присваивается каждому элементу корнтейнера, отвечает за порядок вывода на экран*/
+}
+
+.block-column-2 {
+   order: 3;
+}
+
+.block-column-3 {
+   order: 5;
+}
+
+.block-column-4 {
+   order: 1;
+}
+
+.block-column-5 {
+   order: 2;
+}
+
+.block-item {}

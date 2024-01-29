@@ -1,0 +1,198 @@
+/*--обнуление---------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* убираем отступы и границы*/
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* убираем меняет подсчет ширины блока*/
+:focus,
+:active {
+  outline: none
+}
+
+a:focus,
+a:active {
+  outline: none
+}
+
+/* убираем линии обводки у некоторых браузеров*/
+nav,
+footer,
+header,
+aside {
+  display: block
+}
+
+/* Делает заначение тегов блочными*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*конец обнуления-------------------------*/
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+/*-----lesson 11---------------------------------*/
+.text {
+  font-size: 24px;
+  line-height: 33px;
+  margin: 40px 30px 30px 30px;
+}
+.text::first-line{
+  /*псевдоэлемент задает стиль первой строки текста  даже при изменении размера браузера стиль применяется только к певой строке/ Допустимо использовать свойства только те, которые относятся к шрифту цвету, размеру текста и фона*/
+  color: green;
+}
+.text::first-letter{
+  /*псевдоэлемент применяет стиль только к первой буквеДопустимо использовать свойства только те,
+    которые относятся к шрифту цвету,
+    размеру текста и фона*/
+  color: red;
+  font-size: 50px;
+}
+.list{}
+.list li {
+  font-size: 24px;
+  margin: 0px 30px 20px 30px;}
+  .list li:before{
+    /* Применяется для отображения желаемого контента до содержимого элемента, к которому он добавляется. Псевдоэлемен обязательно используется со свойством cоntent, без него не отобразится, значение свойствa может оставться пустым */
+    content: '';
+    margin: 0px 10px 0px 0px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;/*образует закругления углов*/
+    background-color: purple;
+    display: inline-block; /*Значение присваивает элементу строчные характеристики, но сохраняет ему блочные свойства такие как ширина высота...*/
+  }
+  .list li:after {
+    /*Применяется для отображения желаемого контента после содержимого элемента,
+    к которому он добавляется.псевдоэлемен обязательно используется со свойством cоntent, без него не отобразится, значение свойствa может оставться пустым */
+    content: '';
+    }
+    .input__text{
+      margin: 30px 30px 30px 30px;
+      width: 300px;
+      box-shadow: inset 2px 2px 30px 10px green;
+    }
+    .list li:hover:before{
+    background-color: rgb(95, 238, 6);
+    }/*Записывать нужно именно в порядке: Сначала псевдокласс потом псевдоэлемен .list li:hover:beforeт*/
+    /*--clouse lesson 11----------------------------*/
+   /* body{
+  padding: 30px;
+}
+.text {
+  font-size: 24px;
+  line-height: 33px;
+  margin: 20px 20px 30px;
+}
+.text::first-line{
+  background-color: rgb(133, 219, 219);
+}
+.text::first-letter{
+  font-size: 60px;
+  font-style: oblique;
+  color: green;
+}
+.list {
+  font-size: 24px;
+  margin: 10px 10px 20px; 
+}
+.list li{
+  padding: 10px 10px 10px 10px;
+}
+.list li::before{
+  content:"";
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 5px 1px purple;
+  margin: 0px 15px 0px 0px;
+}
+.list li::after {
+   content:"";
+  width: 10px;
+  height: 10px;
+  background-color: purple;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0px 0px 5px 1px purple;
+  margin: 0px 0px 0px 15px;
+}
+.list li:hover::before,:after{
+    box-shadow: 0px 0px 0px 1px purple;
+}
+.list li:hover:after {
+  box-shadow: 0px 0px 0px 1px purple;
+}
+*/

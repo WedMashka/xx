@@ -1,0 +1,135 @@
+/*--обнуление---------*/
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+}
+
+/* убираем отступы и границы*/
+*,
+*:before,
+*:after {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+/* убираем меняет подсчет ширины блока*/
+:focus,
+:active {
+   outline: none
+}
+
+a:focus,
+a:active {
+   outline: none
+}
+
+/* убираем линии обводки у некоторых браузеров*/
+nav,
+footer,
+header,
+aside {
+   display: block
+}
+
+/* Делает заначение тегов блочными*/
+html,
+body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+
+/*уравнивают поведение шрифтов и элементов для разных браузеров и запрещает самовольное уведичение шрифта на айфонах*/
+input,
+button,
+textarea {
+   font-family: inherit;
+}
+
+/*обращение к тегам форм, что бы не наследовали свойства шрифта*/
+input::-ms-clear {
+   display: none;
+}
+
+button {
+   cursor: pointer;
+}
+
+button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+}
+
+a,
+a:visited {
+   text-decoration: none;
+}
+
+a:hover {
+   text-decoration: none;
+}
+
+ul li {
+   list-style: none;
+}
+
+img {
+   vertical-align: top;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-size: inherit;
+   font-weight: 400;
+}
+
+/*конец обнуления-------------------------*/
+
+
+.text1 {
+   color-interpolation-filters: green;
+   font-size: 30px;
+   padding: 30px;
+}
+
+.text2 {
+   color: purple;
+   font-size: 20px;
+   padding: 30px;
+}
+
+/*.text1-span {
+   color: blue;
+}*/
+
+/*.text2-span {
+   color: orange;
+}*/
+span.text2-span{
+   color: gray;
+   font-size: 50px;
+}
+.text3 {
+   padding: 50px;
+}
+.text3 span{
+   color: red;
+}
+.text4>p{
+   color: green;
+}
+.text4{
+   border: 2px solid red;
+}
